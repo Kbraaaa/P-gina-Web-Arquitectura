@@ -1,0 +1,309 @@
+/* Header general */
+header {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Contenedor del logo y el título */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Logo */
+.logo img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+/* Título principal */
+.title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtítulo */
+.title p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    font-style: italic;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Amarillo dorado para destacar al pasar el ratón */
+}
+
+/* Fondo dinámico con efecto de animación */
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background-tech.jpg') no-repeat center center/cover;
+    opacity: 0.1; /* Leve transparencia para que no distraiga */
+    z-index: -1;
+}
+
+/* Responsive design para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+}
+/* Estilos para la sección Hero */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Contenido del hero */
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón principal */
+.btn-primary {
+    background-color: #FFD700;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+/* Fondo dinámico con animación sutil */
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background-overlay.png') no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+/* Estilos para las secciones de componentes */
+.component-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background-color: #f8f9fa;
+    margin-bottom: 50px;
+}
+
+.component-section:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.component-content {
+    max-width: 500px;
+}
+
+.component-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.component-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.component-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón secundario */
+.btn-secondary {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .component-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .component-content {
+        text-align: center;
+    }
+
+    .component-image {
+        margin-top: 20px;
+    }
+
+    .component-image img {
+        max-width: 100%;
+    }
+}
+/* Estilos del footer */
+footer {
+    background: #1c1c1c;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Contenido principal del footer */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #d3d3d3;
+}
+
+/* Redes sociales */
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials li a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+    color: #FFD700;
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+    background: #141414;
+    padding: 20px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-content p {
+        font-size: 1rem;
+    }
+}
